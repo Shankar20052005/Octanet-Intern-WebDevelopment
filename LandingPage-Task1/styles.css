@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    width: 100%;
+    height: 60vh;
+    background-image: url(https://wallpaperswide.com/download/amazing_mountainscape-wallpaper-960x540.jpg);
+    background-size: cover;
+    background-position: center 10%;
+}
+
+.top .overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.297);
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 5%;
+}
+
+.text h1 {
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.text .image {
+    background-image: url(https://4kwallpapers.com/images/wallpapers/aesthetic-scenery-1440x2560-14711.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 150px;
+}
+
+.rtext {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rtext p {
+    font-size: 1.5vw;
+}
+
+.icons {
+    display: flex;
+    gap: 1vw;
+    font-size: 2vw;
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+}
+
+.b1 {
+    width: 30%;
+    height: 100%;
+    background-image: url(https://www.hdwallpapers.in/download/blue_aesthetic_new_york_city_buildings_sky_background_hd_blue_aesthetic-HD.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.b1 h1 {
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    backdrop-filter: blur(5px);
+}
+
+.b1 p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2vw;
+    backdrop-filter: blur(5px);
+}
+
+.b2 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.b2 .up {
+    width: 100%;
+    height: 50%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZRuPUxES3ECqcTEYQS9T-FqzzMTE39Hx1SQ&s);
+    background-size: cover;
+    background-position: center 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.b2 .up h1 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 2vw;
+    backdrop-filter: blur(5px);
+}
+
+.b2 .up p {
+    color: white;
+    text-align: center;
+    padding: 2%;
+    font-size: 1.2vw;
+    backdrop-filter: blur(5px);
+}
+
+.b2 .down {
+    width: 100%;
+    height: 50%;
+    background-image: url(https://c1.peakpx.com/wallpaper/771/195/588/mountains-landscape-beskids-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.b2 .down .overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.344);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b3 {
+    width: 40%;
+    height: 100%;
+    background-image: url(https://images.pexels.com/photos/4144768/pexels-photo-4144768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+}
+
+.b3 .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 2vw 2vh;
+}
+
+.b3 .overlay p {
+    padding: 1.2vh;
+    color: white;
+    font-size: 1.2vw;
+}
+
+@media (max-width: 700px) {
+    .rtext {
+        flex-direction: column;
+    }
+
+    .b3 .overlay {
+        width: 100%;
+        margin-left: initial;
+    }
+}
+
+@media (max-width: 500px) {
+    .text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text h1 {
+        font-size: 5vh;
+    }
+
+    .text .image {
+        height: 140px;
+        width: 100px;
+        margin-top: 20px;
+    }
+
+    .rtext {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rtext p {
+        margin-top: 10px;
+        font-size: 3vh;
+    }
+
+    .icons {
+        margin-top: 10px;
+        font-size: 5vh;
+    }
+
+    .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .b1 {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .b2 {
+        width: 100%;
+    }
+
+    .b2 .up {
+        height: 20vh;
+    }
+
+    .b3 {
+        width: 100%;
+        height: 20vh;
+        background-position: left;
+    }
+}
